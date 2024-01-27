@@ -9,7 +9,7 @@ import (
 
 /*
 Token:
-	model: github.com/d3v-friends/go-graphql/typ.Token
+	model: github.com/d3v-friends/go-graphql/scalar.Token
 */
 
 func MarshalToken(b string) graphql.Marshaler {

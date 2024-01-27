@@ -10,7 +10,7 @@ import (
 
 /*
 UUID:
-	model: github.com/d3v-friends/go-graphql/typ.UUID
+	model: github.com/d3v-friends/go-graphql/scalar.UUID
 */
 
 func MarshalUUID(b typ.UUID) graphql.Marshaler {

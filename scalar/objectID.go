@@ -10,7 +10,7 @@ import (
 
 /*
 ObjectID:
-	model: github.com/d3v-friends/go-graphql/typ.ObjectID
+	model: github.com/d3v-friends/go-graphql/scalar.ObjectID
 */
 
 func MarshalObjectID(b primitive.ObjectID) graphql.Marshaler {

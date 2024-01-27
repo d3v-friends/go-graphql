@@ -11,7 +11,7 @@ import (
 
 /*
 Decimal:
-	model: github.com/d3v-friends/go-graphql/typ.Decimal
+	model: github.com/d3v-friends/go-graphql/scalar.Decimal
 */
 
 func MarshalDecimal(b decimal.Decimal) graphql.Marshaler {
