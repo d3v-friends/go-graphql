@@ -41,16 +41,16 @@ func HeaderMiddleware() echo.MiddlewareFunc {
 	}
 }
 
-func GetHeader(ctx context.Context) (header *http.Header, err error) {
+func GetHeader(ctx context.Context) (header http.Header, err error) {
 	var isOk bool
-	if header, isOk = ctx.Value(CtxHeader).(*http.Header); !isOk {
+	if header, isOk = ctx.Value(CtxHeader).(http.Header); !isOk {
 		err = ErrNotFoundHeader
 		return
 	}
 	return
 }
 
-func GetHeaderP(ctx context.Context) (header *http.Header) {
+func GetHeaderP(ctx context.Context) (header http.Header) {
 	var err error
 	if header, err = GetHeader(ctx); err != nil {
 		panic(err)
